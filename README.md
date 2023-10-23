@@ -43,7 +43,7 @@ Mobile Preview
 
 ### Links
 
-- Live url: [live url here](exhibition-2.vercel.app)
+- Live url: [live url here](https://exhibition-2.vercel.app/)
 
 
 ## My process
