@@ -1,0 +1,308 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+:root {
+    --red-color: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /*The Gradient colors for the background*/
+    --first-color: hsl(252, 100%, 67%);
+    --second-color: hsl(241, 81%, 54%);
+
+    /* Circle gradient colors*/
+    --circleFirst-color:  hsla(256, 72%, 46%, 1);
+    --circleSecond-color: hsla(241, 72%, 46%, 0);
+
+    /*Neutral colors*/
+    --darkgrey-blue: hsl(224, 30%, 27%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    width: 800px;
+    background-color: var(--white-color);
+    align-items: baseline;
+    box-shadow: 15px 19px 15px hsl(221, 100%, 96%);
+    border-radius: 8%;
+}
+
+/** Blue section(Left part) Styling start here**/
+#blueSection{
+    background: linear-gradient(var(--first-color),var(--second-color));
+    color: white;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 8%;
+}
+.bsection {
+    text-align: center;
+}
+.result {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: hsla(221, 100%, 96%, 0.8);
+}
+#circle {
+    background: linear-gradient(var(--circleFirst-color),var(--circleSecond-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 65%;
+    border-radius: 50%;
+    min-height: 200px;
+    margin-block: 2rem;
+    padding: 2rem;
+}
+.seventysix {
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+}
+.hundred {
+    margin: 0;
+    padding: 0;
+    color: hsla(221, 100%, 96%, 0.4);
+}
+.great {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+.youscored{
+    color: hsla(221, 100%, 96%, 0.6);
+    white-space: pre-line;
+}
+
+/**Blue section(Left part) Styling ends here**/
+
+/**White section(Right part) styling starts here**/
+
+#whiteSection {
+    width: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--white-color);
+}
+
+.capsules {
+    padding-inline: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.pair {
+    display: flex;
+}
+.icons {
+    width: 1.5rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+.summary {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0;
+}
+
+.reaction {
+    color: var(--red-color);
+    font-weight: 800;
+}
+.capsules:where(.red){
+    background-color: hsla(0, 100%, 67%,0.05);
+    font-weight: 800;
+}
+
+.memory {
+    color: var(--orangey-yellow);
+    font-weight: 800;
+}
+.capsules:where(.orange){
+    background-color: hsla(39, 100%, 56%,0.05);
+    font-weight: 800;
+}
+
+.verbal {
+    color: var(--green-teal);
+    font-weight: 800;
+}
+.capsules:where(.green){
+    background-color: hsla(166, 100%, 37%,0.05);
+}
+
+.visual{
+    color: var(--cobalt-blue);
+    font-weight: 800;
+}
+.capsules:where(.blue){
+    background-color: hsla(234, 85%, 45%,0.05);
+}
+
+span{
+    font-weight: 800;
+}
+span:where(.slash){
+    color: hsla(224, 30%, 27%,0.4);
+}
+
+button{
+    display: block;
+    width: 80%;
+    min-height: 2.7rem;
+    margin-block-start: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 25px;
+    color: var(--white-color);
+    background-color: var(--darkgrey-blue);
+    transition: 0.2s;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--cobalt-blue);
+}
+
+/**White section(Right part) styling endss here**/
+
+
+/**@media queries starts here**/
+
+/**Responsive Start Here**/
+
+@media (min-width: 376px) and (max-width: 600px){
+
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    #container{
+        width: 100vw;
+        flex-direction: column;
+        padding: 0;
+    }
+    #blueSection{
+        width: 100vw;
+        padding-block-start: 15rem;
+        border-radius: 0 0 10% 10%;
+    }
+    #circle {
+        width: 40vw;
+    }
+
+    #whiteSection{
+        width: 100%;
+    }
+    
+}
+/**Responsive Start Here**/
+
+
+/**Mobile Version Ends Here**/
+
+@media (min-width: 1px) and (max-width: 376px){
+    body{
+        margin: 0;
+        padding: 0;
+    }    
+    
+    #container{
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            font-size: 10px;
+            padding: 0;
+        }
+        #blueSection{
+            width: 100vw;
+            padding: 0;
+            border-radius: 0 0 10% 10%;
+        }
+        .result {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-block-end: 1rem;
+        }
+        .great {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-block-start: 1rem;
+            margin-block-end: -0.4rem;
+        }
+        .youscored{
+            white-space: normal;
+            font-size: 0.8rem;
+            padding-inline: 3rem;
+            margin-block-end: 2rem;
+        }
+        #circle {
+            width: 40vw;
+            min-height: 20vh;
+            margin-block: 1.2rem;
+            padding: 1rem;
+        }
+        .seventysix {
+            font-size: 2.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        .hundred {
+            font-size: 0.9rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        #whiteSection{
+            width: 100%;
+            gap: 0.8rem;
+        }
+        .capsules:where(.red, .orange, .green, .blue) {
+            font-size: 0.8rem;
+            
+        }
+        .summary {
+            font-size: 0.9rem;
+            margin-block-end: -0.6rem;
+        }
+        button {
+            font-size: 0.9rem;
+            margin: 0;
+            padding: rem;
+        }
+        
+}
+    
+/**Mobile Version Ends Here**/
+
+/**@media queries starts here**/
+
+

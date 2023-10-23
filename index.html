@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <!--font linking-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="blueSection">  
+      <p class="bsection result" >Your Result</p>
+      <div id="circle">
+        <p class="bsection seventysix">76</p>
+        <p class="bsection hundred">of 100</p>
+      </div>
+
+      <p class="bsection great">Great</p>
+      <p class="bsection youscored">You scored higher than 65% of 
+        the people who have taken 
+        these tests.</p><!--this paragraph will be using pre-line white space.-->
+    </div>
+    <div id="whiteSection">
+      
+        <div class="capsules summary"><p>Summary</p></div>
+
+        <div class="capsules red"><div class="pair reaction"><img class="icons" src="assets/images/reaction.svg"><p>Reaction </p></div><p><span>80</span> <span class="slash">/ 100</span></p></div>
+      
+        <div class="capsules orange"><div  class="pair memory"><img class="icons" src="assets/images/memory.svg"><p>Memory</p></div><p><span>92</span><span class="slash"> / 100</span></p></div>
+
+        <div class="capsules green"><div class="pair verbal"><img class="icons" src="assets/images/verbal.svg"><p>Verbal</p></div><p><span>61</span><span class="slash"> / 100</span></p></div>
+        
+        <div class="capsules blue"><div class="pair visual"><img class="icons" src="assets/images/visual.svg"><p>Visual</p></div><p><span>72</span><span class="slash"> / 100</span></p></div>
+
+        <button>Continue</button>
+    
+    </div>
+  </div>  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
