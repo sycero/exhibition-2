@@ -58,7 +58,7 @@ Mobile Preview
 
 ### What I learned
 
-I have been able to learn more about the various screen sizes and how to make them more responsive using media queries.
+Well i built it from scratch purely using just html and css and my favorite editor Visual Studio Code. I tried my best..not perfect but still learning haha.I have been able to learn more about the various screen sizes and how to make them more responsive using media queries.
 
 
 
