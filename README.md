@@ -43,7 +43,7 @@ Mobile Preview
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live url: [live url here](exhibition-2.vercel.app)
 
 
 ## My process
