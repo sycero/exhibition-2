@@ -30,11 +30,11 @@ Users should be able to:
 
 Desktop Preview
 
-![](./screenshot.jpg)
+![Desktop](./Desktop-Preview.png)
 
 Mobile Preview
 
-![](./screenshot.jpg)
+![Mobile](./Mobile-Preview.png)
 
 
 
@@ -44,7 +44,7 @@ Mobile Preview
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
 
 ## My process
 
@@ -70,7 +70,7 @@ I will make it more interactive in very soon XD.
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/) - Comes in handy when looking up synthax.
+- [Developer Mozilla1](https://developer.mozilla.org/en-US/) - Comes in handy when looking up synthax.
 
 
 
